@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-08-21" view-index="0" gantt-divider-location="336" resource-divider-location="300" version="2.8.5" locale="it">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="145" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="86" order="1"/>
+        <field id="tpd5" name="Data di fine" width="86" order="2"/>
+        <option id="color.recent"><![CDATA[#000000]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Analisi" color="#000000" meeting="false" start="2017-09-01" duration="11" complete="0" expand="true">
+            <task id="1" name="Introduzione al proggetto" color="#8cb6ce" meeting="false" start="2017-09-01" duration="1" complete="0" expand="true">
+                <depend id="41" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="41" name="Risoluzione delle domande al cliente" color="#8cb6ce" meeting="false" start="2017-09-08" duration="1" complete="0" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Rubber"/>
+                <depend id="38" type="2" difference="0" hardness="Rubber"/>
+                <depend id="43" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="2" name="Analisi dei requisiti" color="#8cb6ce" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+            <task id="38" name="Analisi dominio" color="#8cb6ce" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+            <task id="43" name="Documento di specifica" color="#8cb6ce" meeting="true" start="2017-09-15" duration="0" complete="0" expand="true">
+                <depend id="15" type="2" difference="0" hardness="Rubber"/>
+                <depend id="18" type="2" difference="0" hardness="Rubber"/>
+                <depend id="47" type="2" difference="0" hardness="Rubber"/>
+                <depend id="61" type="2" difference="0" hardness="Rubber"/>
+                <depend id="64" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="61" name="Documento di specifica fatto" color="#8cb6ce" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="13" name="Proggettazione" color="#000000" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true">
+            <task id="64" name="Analisi formato dati" color="#8cb6ce" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
+            <task id="15" name="Mockup interfacce" color="#8cb6ce" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
+            <task id="47" name="Design procedurale" color="#8cb6ce" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
+            <task id="18" name="Gantt" color="#8cb6ce" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Rubber"/>
+                <depend id="24" type="2" difference="0" hardness="Rubber"/>
+                <depend id="66" type="2" difference="0" hardness="Rubber"/>
+                <depend id="68" type="2" difference="0" hardness="Rubber"/>
+                <depend id="69" type="2" difference="0" hardness="Rubber"/>
+                <depend id="70" type="2" difference="0" hardness="Rubber"/>
+                <depend id="71" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="19" name="Implementazione" meeting="false" start="2017-09-29" duration="11" complete="0" expand="true">
+            <task id="24" name="Creare virtuale" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            <task id="66" name="Installare S.O." color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            <task id="22" name="Intallazione apache" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            <task id="68" name="Installare PHP" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            <task id="69" name="Creazione Form inserimento dati" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            <task id="70" name="Controllo dati" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            <task id="71" name="Raccolta dati (salvataggio file)" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="20" name="Miglioramento stile" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Rubber"/>
+                <depend id="72" type="2" difference="0" hardness="Rubber"/>
+                <depend id="75" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="21" name="Lettura contenuto file" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+            <task id="75" name="Caricamento su infomaniak" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+            <task id="72" name="Sito funzionante" color="#8cb6ce" meeting="true" start="2017-10-13" duration="0" complete="0" expand="true">
+                <depend id="32" type="2" difference="0" hardness="Rubber"/>
+                <depend id="34" type="2" difference="0" hardness="Rubber"/>
+                <depend id="74" type="2" difference="0" hardness="Rubber"/>
+                <depend id="76" type="2" difference="0" hardness="Rubber"/>
+                <depend id="77" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="31" name="Integrazione e test" meeting="false" start="2017-10-13" duration="6" complete="0" expand="true">
+            <task id="74" name="Test VM" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+            <task id="34" name="Test apache" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+            <task id="32" name="Test di performance e velocità inserimento" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+            <task id="76" name="Test PHP" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+            <task id="77" name="Test su infomaniak" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true">
+                <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                <depend id="79" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="78" name="Test controllo dati" color="#8cb6ce" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
+            <task id="79" name="Test raccolta dati" color="#8cb6ce" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="35" name="Consegna" color="#8cb6ce" meeting="false" start="2017-10-27" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
